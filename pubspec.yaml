@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   eva_icons_flutter: ^3.1.0
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
