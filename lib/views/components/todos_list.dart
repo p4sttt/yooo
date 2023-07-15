@@ -44,16 +44,24 @@ class _TodoCardState extends State<TodoCard> {
     return GestureDetector(
       onTap: handleChange,
       child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: Colors.pink,
+            width: 1,
+          ),
+          borderRadius: BorderRadius.circular(16),
+        ),
         width: double.infinity,
         padding: const EdgeInsets.symmetric(
           horizontal: 16,
-          vertical: 16,
+          vertical: 8,
         ),
         child: Row(
           children: [
             Checkbox(
               value: state,
               onChanged: (bool? value) {},
+              fillColor: const MaterialStatePropertyAll(Colors.pink),
             ),
             const SizedBox(
               width: 16,
